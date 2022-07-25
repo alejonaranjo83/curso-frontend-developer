@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {background: powderblue;
+            width: 300px;
+            height: 150px;
+            margin: 20px} 
+        body {margin:0}
+        a {background: yellow;
+            margin: 20px;
+            width: 100px;
+            height: 100px;}
+            /* varias de estas propiedades no aplican para este tipo de elemento 
+            Solo el margin se aplica en el eje horizontal*/
+        button {background: rgb(204, 229, 156);
+            margin: 40px;
+            width: 100px;
+            height: 100px;}
+    </style>
+</head>
+<body>
+    <div>bloque</div>
+    <a href="/">Inline</a>
+    <button>inline block</button>
+    <!--pese a q en el "inline" le puse alto y ancho, no coje esa propiedad pues
+    es un elemento de tipo "line"; en cambio con el "button" si me da al ser un bloque-->
+</body>
+</html>

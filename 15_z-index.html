@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+        .one {
+            z-index: 2;
+            /* con esto determino el orden en q aparecen los elementos */
+            background: lawngreen;
+        }
+        .two {
+            z-index: 1;
+            background: blue;
+        }
+        .red {
+            width: 20px;
+            height: 20px;
+            background: red;
+            z-index: 3;
+        }
+        .blue {
+            width: 20px;
+            height: 20px;
+            background: blue;
+            z-index: 2;
+        }
+        .yellow {
+            width: 20px;
+            height: 20px;
+            background: yellow;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <!-- esta parte fue el ejercicio inicial: -->
+    <!-- <div class="one">Alejo</div>
+    <div class="two"> Naranjo Gaviria</div> -->
+    <section>
+        <div class="red">Red</div>
+        <div class="blue">Blue
+            <div class="yellow">Yellow</div>
+        </div>
+    </section>
+</body>
+</html>

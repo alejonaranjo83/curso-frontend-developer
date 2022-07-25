@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /* position: relative; */
+        }
+        .card {
+            position: relative;
+            top: 40px;
+            width: 500px;
+            height: 680px;
+            background: black;
+            border-radius: 20px;
+            overflow: hidden;
+            /* con ese recorta imagen en fxn de límite de tarjeta*/
+        }
+        .card img {
+            width: 100%;
+            /* con ese escala imagen al tamaño de la tarjeta */
+        }
+        .card p {
+            text-align: right;
+            padding: 20px;
+            margin: 0px;
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+        .card p:nth-child(3){
+            color: white;
+            font-style: oblique;
+            font-size: 20px;
+            /* position: absolute;
+            right: 120px; */
+        }   
+        body {background: grey;}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img src="https://render.fineartamerica.com/images/rendered/search/poster/8/8/break/images-medium-5/8-the-kiss-gustav-klimt.jpg" alt="Klimt">
+            <p>Obra: The Kiss</p>
+            <p>Artista: Klimt</p>
+        </div>
+    </section>
+</body>
+</html>

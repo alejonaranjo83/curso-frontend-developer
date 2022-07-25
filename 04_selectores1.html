@@ -1,0 +1,35 @@
+<!--En este archivo empiezo a trabajar con CSS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Aquí creé esta parte para empezar a trabajar con selectores de CSS
+    algunos de esos estilos, los bauticé yo (title, title 2)-->
+    <style>
+        * {background: rgb(241, 192, 192);}
+        /* * = selector universal */
+        div {background: rgba(107, 46, 126, 0.63);}
+        /* selector de tipo */
+        .title {color: whitesmoke;}
+        /* "." = selector de clase */
+        #title2 {color: #274d80;}
+        /* "#" = selector de ID */
+        a[href="https://interacpedia.com/website"] {
+            color: #C70039;
+        /* selector de atributo */
+        }
+    </style>
+    <!--tipos de selectores usados: "*" universal; "div" tipo;
+    "a" atributo; "#" ID; "." clase-->
+    <!--puedo encontrar todos los colores disponibles en:
+    https://htmlcolorcodes.com/es/-->
+</head>
+<body>
+    <div class="title">Hola mundo (selector de clase)</div>
+    <div id="title2">Estoy empezando a jugar con CSS (selector de ID)</div>
+    <a href="https://interacpedia.com/website">Interacpedia</a>
+</body>
+</html>

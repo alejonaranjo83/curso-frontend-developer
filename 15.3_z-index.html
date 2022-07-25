@@ -1,0 +1,96 @@
+<!-- Ejercicio autónomo de algo q hice primero en mi cabez y papel -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rect1 {
+            width: 300px;
+            height: 500px;
+            background: rgba(144, 49, 227, 0.705);
+            position: relative;
+            left: 170px;
+            z-index: 2;
+            color: white;
+            font-family: sans-serif;
+            padding: 12px;
+            box-sizing: border-box;
+            border-radius: 15px;
+        }
+        .rect1b {
+            width: 350px;
+            height: 150px;
+            background: rgba(238, 31, 4, 0.699);
+            position: absolute;
+            /* position: relative; */
+            top: 80px;
+            left: 80px;
+            /* z-index: 1; */
+            color: white;
+            font-family: sans-serif;
+            padding: 12px;
+            box-sizing: border-box;
+            border-radius: 15px;
+        }
+        .rect2 {
+            width: 300px;
+            height: 280px;
+            background: #0b73fcb7;
+            position:fixed;
+            top: 170px;
+            z-index: 1;
+            color: white;
+            font-family: sans-serif;
+            padding: 12px;
+            box-sizing: border-box;
+            border-radius: 15px;
+        }
+        /* * {background: rgb(196, 193, 193);} */
+        /* selector universal */
+        body {background-color: rgb(202, 200, 200);}
+        .icon img{
+            background: transparent; 
+            height: 20px;
+            /* position: absolute;
+            top: 80%; */
+        }
+        .icon2 img{
+            background: transparent; 
+            height: 35px;
+            /* position: absolute;
+            top: 80%; */
+        }
+        footer {
+            color: grey;
+            font-family: sans-serif;
+        }
+        a[href="https://css.gg/app"] {
+            color: white;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class = "rect2">rectángulo 2
+        <div class = icon2>
+            <img src="icons/arrow-bottom-left-r-w.png">
+        </div>
+    </div>
+    <div class = "rect1"> rectángulo 1
+        <div class = icon>
+            <img src="icons/arrow-align-h-w.png">
+        </div>
+        <div class = "rect1b">rectángulo 1b
+            <div class = icon2>
+                <img src="icons/arrow-top-right-o-w.png">
+            </div>
+        </div>
+    </div>
+    <footer>Íconos traidos de: 
+        <a href="https://css.gg/app">css.gg</a>
+         </footer>
+</body>
+</html>

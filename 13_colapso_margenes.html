@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            /*          Una primera exploración: */
+            /* flex-direction: column;
+            align-items: center; */
+            /*          Otra exploración */
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>Alejo 1</div>
+    <div>Alejo 2</div> -->
+    <!-- opción previa por defecto... superponiendo márgenes. 
+    Por el contrario, con la siguiente, puedo manejar el contenido
+    haciendo uso del display "flex" xej-->
+
+    <section class="container">
+        <div>Alejo 1</div>
+        <div>Alejo 2</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 62.5%;
+            /* esto se usa para hacer más claro el manejo de tamaños de fuentes 
+            el cual por defecto es de 16px... con "regla de 3", hago q el tamaño
+            por defecto sea de 10px y así cuando use el "rem" sabré mejor de qué tamaño es */
+        }
+        body {
+            margin: 0px;
+            /* esto para q los elementos "no estén sangrados" */
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background: salmon;
+        }
+        p {
+            font-size: 2.5rem;
+            /* medida relativa al tamaño del texto base 
+            Luego del ajuste a 10px, 2.5 rem quiere decir 25px*/
+        }
+        .container {
+            width: 100vh;
+            height: 100vh;
+            /* vh quiere decir q tome todo lo q estoy visualizando en la pantalla*/
+            background: rgba(255, 255, 255, 0.479);
+        }
+        body {background: rgb(112, 24, 24);}
+    </style>
+</head>
+<body>
+    <div>Alejo</div>
+    <p>Naranjo</p>
+    <div class="container"></div>
+</body>
+</html>

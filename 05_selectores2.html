@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            /* Selector "descendiente" */
+            color: rgb(252, 248, 6) ;
+        }
+        div > div {
+            /* Selector hijo directo */
+            background: rgb(120, 121, 120);
+        }
+        div + section {
+            /* Selector elemento adyacente */
+            background: rgb(67, 68, 67); color: white;
+        }
+        .es {
+            background: rgb(119, 143, 96);
+        }
+        div ~ p {
+            /* Selector general de hermanos */
+            color: rgb(241, 84, 22);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p>Alejo</p> <!--selector combinador "descendiente"-->
+            <div class="es">Vamos para adelante!</div> 
+            <!--en style ajusto la propiedad de este "hijo directo" en div > div-->
+        </div>  
+    </div>
+    <p>selector combinador</p> <!--estos son "hermanos" q aparecen después de div (en style: div ~ p)-->
+    <p>selector combinador</p>
+    <section>
+        Le vamos cogiendo el tiro y el sabor a esto...
+    </section>
+    <div>
+        con paciencia
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!--A través de este código, exploro los display q ofrece "flex"
+link importante para profundizar: 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex; /*con esto habilito todas las opciones q me da el módulo "flex"*/
+            background: teal;
+            /* justify-content: space-between */
+            justify-content: center;
+            /* controla el eje vertical */
+            height: 200px;
+            align-items: center; 
+             /* controla el eje horizontal  */
+            flex-direction: column;
+            /* flex-direction: row; */
+        }
+        .item {
+            width: 30px;
+            height: 30px;
+            background: lightsalmon;
+        }
+        .container .item:nth-child(2n + 1) {
+            background: yellow;
+            /* "2n + 1" quiere decir: todos los elementos impares */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

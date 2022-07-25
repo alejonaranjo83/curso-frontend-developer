@@ -1,0 +1,33 @@
+<!--en este código estoy jugando con pseudoclases y pseudoelementos-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: lightgray;
+        }
+        p:hover {color:cyan; background-color:grey}
+        p::first-letter {color: rgb(122, 139, 143);}
+        p::before {content:"+"}
+        p::after {content: " *";}
+        div p:nth-child(3) {color: lightskyblue;}
+        ::placeholder {color:lightgray}
+        p:active {color: rgb(0, 193, 252);}
+        p {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+        /* p {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;} */
+    </style>
+</head>
+<body>
+    <p>Selector pseudoclase "hover"</p>
+    <div>
+        <p>Alejo</p>
+        <p>Naranjo</p> 
+        <p>Saltamontes</p> <!--en "style" le digo q sea el 3er hijo con: "p:nth-child(3)"-->
+    </div>
+    <input type="text" placeholder="write something">
+</body>
+</html>
